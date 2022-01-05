@@ -1,24 +1,24 @@
 import { getYear } from '../utilities/utilities';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Footer = () => (
     <footer>
         <div className="footer-nav">
         <ul>
-                <li><NavLink to="/" exact>Home</NavLink></li>
-                <li><NavLink to="/about">About</NavLink></li>
-                <li><NavLink to="/favourite">Favourite</NavLink></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/favourite">Favourite</Link></li>
             </ul>
-            <img src="/images/gsfLogo_version1.png" className="footer-logo" alt="Gold Star Film logo" />
+            <img src="" className="" alt="" />
             <ul>
-                <li><NavLink to="/" exact>Contact</NavLink></li>
-                <li><NavLink to="/">Help Center</NavLink></li>
-                <li><NavLink to="/">Media Center</NavLink></li>
+                <li><Link to="/">Contact</Link></li>
+                <li><Link to="/">Help Center</Link></li>
+                <li><Link to="/">Media Center</Link></li>
         </ul>
         </div>
         <div className="education-note">
             <p>For Educational Purposes Only</p>
-            <p>&copy; {getYear()} ceejay.design</p>
+            <p>&copy; {getYear()} Stelianos Langaditis</p>
         </div>
     </footer>
 );

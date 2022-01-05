@@ -1,0 +1,22 @@
+.footer {
+    text-align: center;
+    height: auto;
+    width: 100px;
+    pointer-events: none;
+}
+
+.footer-logo {
+    background-color: #1c1c24;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    color: white;
+    padding: 10px;
+}
+
+.footer-nav {
+    display: flex;
+
+}

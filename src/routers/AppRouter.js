@@ -1,7 +1,6 @@
 // AppRouter
-
 // Development Components
-import { BrowserRouter as Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Components
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -10,10 +9,9 @@ import PageHome from '../pages/PageHome';
 import PageAbout from '../pages/PageAbout';
 import PageFavourite from '../pages/PageFavourite';
 import PageNotFound from '../pages/PageNotFound';
-
 function AppRouter() {
   return (
-    // <Router>
+    <BrowserRouter>
       <div className="wrapper">
         <Header />
           <main>
@@ -21,16 +19,27 @@ function AppRouter() {
               <Route path="/" index element={<PageHome />} />
               <Route path="/about" element={<PageAbout />} />
               <Route path="/favourite" element={<PageFavourite />} />
-              <Route><PageNotFound /></Route>
+              <Route path="*" element={<PageNotFound />} />
             </Routes>
           </main>
         <Footer />
       </div>
-    // </Router>
+    </BrowserRouter>
   );
 }
-
 export default AppRouter;
 
 
-//Page home is it index or exact?
+
+
+
+
+
+
+
+
+
+
+
+
+
