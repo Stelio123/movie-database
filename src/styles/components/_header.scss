@@ -3,10 +3,11 @@
     height: auto;
     width: 100px;
     pointer-events: none;
+
 }
 
 .header-logo {
-    background-color: #1c1c24;
+    background-color: $orange;
     min-height: 100px;
     display: flex;
     flex-direction: column;
