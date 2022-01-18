@@ -2,7 +2,7 @@ import MovieCard from "./MovieCard"
 
 function Movies({movies}) {
     return (
-        <div className="movie-box">
+        <div >
             {movies.map(movie => <MovieCard key={movie.id} movie={movie} />)}
         </div>
     )

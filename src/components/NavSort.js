@@ -14,7 +14,7 @@ function NavSort() {
                     <NavLink to="/sort/now-playing">Now Playing</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/sort/upciming">Upcoming</NavLink>
+                    <NavLink to="/sort/upcoming">Upcoming</NavLink>
                 </li>
             </ul>
         </div>

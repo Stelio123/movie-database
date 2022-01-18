@@ -5,14 +5,14 @@
 
     @include mq($tablet) {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 12em;
+        grid-template-columns: 10rem 10rem 10rem;
+        gap: 1rem;
     }
 
     @include mq($desktop) {
         padding: 20em;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 18em;
+        gap: 5rem;
     }
 }
 
