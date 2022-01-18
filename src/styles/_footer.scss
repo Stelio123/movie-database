@@ -1,0 +1,19 @@
+// Footer
+
+
+footer {
+    color: white;
+    background-color: $orange;
+    height: 135px;
+    border-top: 2px solid $orange;
+    padding: em(20);
+
+    p {
+
+        text-align: center;
+        margin: 0;
+        font-size: 12px;
+    }
+}
+
+.nav-sort {}

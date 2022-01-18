@@ -1,6 +1,6 @@
 // Nav
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
 
@@ -11,9 +11,9 @@ const Nav = () => {
     return (
         <nav className="main-nav" onClick={blur}>
             <ul>
-                <li><Link to="/" exact>Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/favourite">Favourite</Link></li>
+                <li><NavLink to="/" exact>Home</NavLink></li>
+                <li><NavLink to="/about">About</NavLink></li>
+                <li><NavLink to="/favourites">Favourites</NavLink></li>
             </ul>
         </nav>
     );

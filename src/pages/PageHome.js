@@ -1,21 +1,39 @@
-// Page - Home
+// Home Page
 
-import { useEffect } from 'react';
-import { appTitle } from '../globals/globals';
+import {useState, useEffect} from 'react';
+import {API_KEY} from '../globals/globals';
+import Movies from '../components/Movies';
+import NavSort from '../components/NavSort';
 
-const PageHome = () => {
+function PageHome({sort}) {
 
+    // Good Known Endpoint - Popular Movies
+    // https://api.themoviedb.org/3/movie/popular?api_key=333cb9b6a654afe173fed9c0305cc79c&language=en-US&page=1
+
+    const [moviesData, setMoviesData] = useState(null);
+    
+    
     useEffect(() => {
-		document.title = `${appTitle} - Home`;
-	}, []);
+
+        const fetchMovies = async () => {
+            const res = await fetch (`https://api.themoviedb.org/3/movie/${sort}?api_key=${API_KEY}&language=en-US&page=1`);
+            let moviesDataFromAPI = await res.json();
+            moviesDataFromAPI = moviesDataFromAPI.results.splice(0, 12);
+            setMoviesData(moviesDataFromAPI);
+        }
+
+        fetchMovies();
+
+    },[sort]);
+
+
 
     return (
         <section>
-            <h2>Home Page</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit porro, dolorem, quod facere enim voluptate provident quo labore vero repellat nemo animi ad exercitationem rem quos, possimus libero deleniti laudantium?</p>
+            <NavSort />
+            {moviesData != null && <Movies movies={moviesData} /> }
         </section>
-    );
+    )
+}
 
-};
-
-export default PageHome;
+export default PageHome

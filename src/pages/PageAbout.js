@@ -1,5 +1,4 @@
 // Page - About
-
 import { useEffect } from 'react';
 import { appTitle } from '../globals/globals';
 
