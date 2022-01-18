@@ -1,12 +1,15 @@
 //Movies
 
+@use "./variables"as *;
+@use "./mixins"as *;
+
 .movie-box {
     padding: 10px;
 
-    @include mq($tablet) {
+    @media (min-width:$tablet) {
         display: grid;
-        grid-template-columns: 10rem 10rem 10rem;
-        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
     }
 
     @include mq($desktop) {

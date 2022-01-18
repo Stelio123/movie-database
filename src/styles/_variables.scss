@@ -2,13 +2,26 @@
 
 
 //Colors
-$textColor:white;
 $orange: #bf451c;
-$hover-orange:#bf451c;
+$hover-orange: lighten($orange, 20);
 $bgColor:#000000;
 
+//Text Colors
+$textColor:white;
+
+//Font sizes
+$font-reg: 1rem;
+$font-lrg: 1.4rem;
+
+//typography defaults
+$line-height: 1.4;
+
+//margin
+$body-margin: 10px;
 
 //Breakpoints
-$tablet: 540;
-$desktop: 820;
-$desktopWide:1000;
+$dekstopOverSize:1020px;
+$desktop:800px;
+$tabletLarge:700px;
+$tabletSmall:500px;
+$phoneLarge:330px;

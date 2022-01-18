@@ -1,5 +1,8 @@
 //section 
 
+@use "./variables"as *;
+@use "./mixins"as *;
+
 .about-page,
 .fav-page {
     padding: 10em;

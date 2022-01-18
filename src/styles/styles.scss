@@ -15,14 +15,14 @@ font-family: 'Sarabun', sans-serif;
 @import './mixins';
 
 // Resets
-@import 'reset';
-@import 'type';
+@import './reset';
+@import './type';
 
 // Components
-@import 'body';
-@import 'wrapper';
-@import 'header';
-@import 'nav';
-@import 'movies';
-@import 'section';
-@import 'footer';
+@import './body';
+@import './wrapper';
+@import './header';
+@import './nav';
+@import './movies';
+@import './section';
+@import './footer';

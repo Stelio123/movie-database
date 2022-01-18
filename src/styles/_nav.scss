@@ -1,5 +1,8 @@
 //Nav 
 
+@use "./variables"as *;
+@use "./mixins"as *;
+
 li {
     list-style-type: none;
 }

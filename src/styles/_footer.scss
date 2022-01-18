@@ -1,5 +1,6 @@
 // Footer
-
+@use "./variables"as *;
+@use "./mixins"as *;
 
 footer {
     color: white;
