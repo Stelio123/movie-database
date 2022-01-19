@@ -1,20 +1,20 @@
 // Page - About
-import { useEffect } from 'react';
-import { appTitle } from '../globals/globals';
 
-const PageAbout = () => {
 
-	useEffect(() => {
-		document.title = `${appTitle} - About`;
-	}, []);
-
+function PageAbout() {
 	return (
-		<section>
-			<h2>About Page</h2>
-			<p>Saepe vitae deserunt cupiditate vel reiciendis adipisci quasi. At, dolore qui, saepe similique id repellat ipsam sapiente repellendus commodi deleniti natus itaque hic temporibus nam nobis tempora enim suscipit quas!</p>
-		</section>
+		<main>
+			<section className="about-section">
+				<h2>Welcome to SNOS MOVIES!</h2>
+				<p>SNOS MOVIES is an online database related to all movies old and new.</p>
+			</section>
+
+			<section className="tmdb-section">
+				<p>This Database uses the TMDb API but is in no way endorsed or supported by TMDb. This website was created for educational purposes only.</p>
+			</section>
+			
+		</main>
 	);
-	
 };
 
-export default PageAbout;
+export default PageAbout
