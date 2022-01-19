@@ -4,9 +4,12 @@
 @use "./mixins"as *;
 
 header {
-
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: $orange;
-    height: 135px;
+    height: 50px;
+    font-size: $font-reg;
 
     h1 {
         margin: em(2) 0 em(6);
@@ -21,7 +24,7 @@ header {
         text-decoration: underline;
     }
 
-    @include mq($tablet) {
+    @media (min-width:$tabletSmall) {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -33,7 +36,7 @@ header {
         }
     }
 
-    @include mq($desktopWide) {
+    @media (min-width: $desktop) {
         margin: em(20);
 
         h1 {

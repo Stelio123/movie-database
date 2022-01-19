@@ -1,8 +1,3 @@
-//Imports
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-
-
-
 /* 
 
 font-family: 'Roboto', sans-serif;
@@ -11,18 +6,22 @@ font-family: 'Sarabun', sans-serif;
 */
 
 // Utilities
-@import './variables';
-@import './mixins';
+@use './variables';
+@use './mixins';
 
 // Resets
-@import './reset';
-@import './type';
+@use './reset';
+@use './typography';
 
 // Components
-@import './body';
-@import './wrapper';
-@import './header';
-@import './nav';
-@import './movies';
-@import './section';
-@import './footer';
+@use './body';
+@use './wrapper';
+@use './header';
+@use './nav';
+@use './movies';
+@use './section';
+@use './footer';
+
+
+//Imports
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');

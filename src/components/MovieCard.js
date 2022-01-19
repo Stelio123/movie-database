@@ -13,6 +13,7 @@ function MovieCard({movie}) {
             <div>
                 <h3>{movie.title}</h3>
                 <Link to={`/movie/${movie.id}`}>More Info</Link>
+                <span>{movie.rating}</span>
             </div>
         </div>
     )
