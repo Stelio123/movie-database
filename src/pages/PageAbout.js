@@ -1,15 +1,8 @@
 // Page - About
 import React from 'react';
-import { useEffect } from 'react';
-import {appTitle} from '../globals/globals';
-
-
 
 function PageAbout() {
 
-	useEffect(() => {
-		document.title = `${appTitle} - About`;
-	}, []);
 	return (
 		<main>
 			<section className="about-section">

@@ -4,7 +4,7 @@
 @use "mixins"as *;
 
 .movie-box {
-    padding: 10px;
+    padding: 1.50rem;
 
     @media (min-width:$desktop) {
         padding: 10px;
