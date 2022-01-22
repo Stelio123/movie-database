@@ -1,10 +1,15 @@
 // Home Page
 
 import {useState, useEffect} from 'react';
-import {API_KEY} from '../globals/globals';
+import {API_KEY, appTitle} from '../globals/globals';
 import Movies from '../components/Movies';
+import MovieDetails from '../components/MovieDetails';
 
 function PageHome({sort}) {
+
+    useEffect(()=> {
+        document.title = `${appTitle} - Home`;
+    },[]);
 
     // Good Known Endpoint - Popular Movies
     // https://api.themoviedb.org/3/movie/popular?api_key=333cb9b6a654afe173fed9c0305cc79c&language=en-US&page=1
@@ -30,6 +35,7 @@ function PageHome({sort}) {
     return (
         <section>
             {moviesData != null && <Movies movies={moviesData} /> }
+            <MovieDetails movieRatings = {moviesData} />
         </section>
     )
 }

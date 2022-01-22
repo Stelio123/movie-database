@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { API_KEY } from '../globals/globals';
+import { API_KEY, appTitle } from '../globals/globals';
 
 function PageSingleMovie() {
+
+    useEffect(() => {
+        document.title = `${appTitle} - Single`
+    },[]);
 
     const {id} = useParams();
     const [movie, setMovie] = useState(null);
@@ -19,7 +23,7 @@ function PageSingleMovie() {
 
         getMovie();
 
-    },[]);
+    },[id]);
 
     return (
         <section>

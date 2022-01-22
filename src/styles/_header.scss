@@ -10,6 +10,7 @@ header {
     background-color: $orange;
     height: 50px;
     font-size: $font-reg;
+    z-index: 1000;
 
     h1 {
         margin: em(2) 0 em(6);

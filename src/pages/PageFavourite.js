@@ -1,7 +1,7 @@
 // Page - Favourite
-
 import { useEffect } from 'react';
 import { appTitle } from '../globals/globals';
+// import FavSlice from '../features/FavSlice';
 
 const PageFavourite = () => {
 

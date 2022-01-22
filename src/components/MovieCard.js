@@ -9,6 +9,10 @@ function MovieCard({movie}) {
         return new Date(string).toLocaleDateString([],options);
     }
 
+    // const movieRating = (string) => {
+    //     let 
+    // }
+
 
     return (
         <div className="movie-box">
@@ -18,11 +22,12 @@ function MovieCard({movie}) {
                 <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.title} />
                 }
             </div>
-            <div>
-                <h3>{movie.title}</h3>
-                <h4>{dateFormat(movie.release_date)}</h4>
-                <h4>{movie.vote_avergae}</h4>
-                <Link to={`/movie/${movie.id}`}>More Info</Link>
+            <div className="info-container">
+                <h3 className="movie-title">{movie.title}</h3>
+                <h4 className="movie-date">{dateFormat(movie.release_date)}</h4>
+                <h4 className="movie-rating">{movie.vote_average *10}%</h4>
+                <p className='movie-description'>{movie.overview}</p>
+               <button className="movie-btn"><Link to={`/movie/${movie.id}`}>More Info</Link></button>
             </div>
         </div>
     )
