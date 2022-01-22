@@ -3,7 +3,6 @@
 import {useState, useEffect} from 'react';
 import {API_KEY} from '../globals/globals';
 import Movies from '../components/Movies';
-import NavSort from '../components/NavSort';
 
 function PageHome({sort}) {
 
@@ -30,7 +29,6 @@ function PageHome({sort}) {
 
     return (
         <section>
-            <NavSort />
             {moviesData != null && <Movies movies={moviesData} /> }
         </section>
     )

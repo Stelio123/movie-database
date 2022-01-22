@@ -1,0 +1,12 @@
+//Main
+
+@use "./variables"as *;
+@use "./mixins"as *;
+
+//About Page
+
+.about-section {
+    margin: 0 auto;
+    color: $textColor;
+    background-color: red;
+}

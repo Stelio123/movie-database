@@ -6,13 +6,6 @@
 .movie-box {
     padding: 10px;
 
-    @media (min-width:$tabletSmall) {
-        padding: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-
     @media (min-width:$desktop) {
         padding: 10px;
         display: grid;
