@@ -11,7 +11,7 @@ h1,
 h2,
 h3,
 nav a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Monsterrat', Helvetica, sans-serif;
     color: $textColor;
 }
 
@@ -21,5 +21,9 @@ h1 {
 }
 
 a {
+    color: $textColor;
+}
+
+p {
     color: $textColor;
 }

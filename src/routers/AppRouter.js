@@ -22,13 +22,13 @@ function AppRouter() {
           <main>
             <Routes>
               <Route path="/" element={<PageHome sort="popular"/>} />
-              <Route path="/sort/popular" element={<PageHome sort="popular"/>} />
-              <Route path="/sort/top-rated" element={<PageHome sort="top_rated"/>} />
-              <Route path="/sort/now-playing" element={<PageHome sort="now_playing"/>} />
-              <Route path="/sort/upcoming" element={<PageHome sort="upcoming"/>} />
-              <Route path="/movie/:id" element={<PageSingleMovie />} />
-              <Route path="/about" element={<PageAbout />} />
-              <Route path="/favourite" element={<PageFavourite />} />
+              <Route path="sort/popular" element={<PageHome sort="popular"/>} />
+              <Route path="sort/top-rated" element={<PageHome sort="top_rated"/>} />
+              <Route path="sort/now-playing" element={<PageHome sort="now_playing"/>} />
+              <Route path="sort/upcoming" element={<PageHome sort="upcoming"/>} />
+              <Route path="movie/:id" element={<PageSingleMovie />} />
+              <Route path="about" element={<PageAbout />} />
+              <Route path="favourite" element={<PageFavourite />} />
               {/* <Route><PageNotFound/></Route> */}
             </Routes>
           </main>

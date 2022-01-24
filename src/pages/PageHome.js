@@ -3,7 +3,7 @@
 import {useState, useEffect} from 'react';
 import {API_KEY, appTitle} from '../globals/globals';
 import Movies from '../components/Movies';
-import MovieDetails from '../components/MovieDetails';
+// import MovieDetails from '../components/MovieDetails';
 
 function PageHome({sort}) {
 
@@ -35,7 +35,7 @@ function PageHome({sort}) {
     return (
         <section>
             {moviesData != null && <Movies movies={moviesData} /> }
-            <MovieDetails movieRatings = {moviesData} />
+            {/* <MovieDetails movieRatings = {moviesData} /> */}
         </section>
     )
 }

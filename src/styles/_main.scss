@@ -6,6 +6,28 @@
 //About Page
 
 .about-section {
-    padding: 10vw 10vw 8vw 10vw;
-    margin: 0 auto;
+
+
+    h2 {
+        margin-top: 200px;
+        text-align: center;
+        padding: 5rem;
+
+    }
+
+    p {
+        margin-bottom: 300px;
+        text-align: center;
+        padding: 5rem;
+    }
+}
+
+
+
+//Favourites Page
+
+.fav-section {
+    footer {
+        margin-bottom: 300px;
+    }
 }

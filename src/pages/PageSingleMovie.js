@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import IndividualMovieCard from "../components/IndividualMovieCard";
 import { API_KEY, appTitle } from '../globals/globals';
 
 function PageSingleMovie() {
+
 
     useEffect(() => {
         document.title = `${appTitle} - Single`
@@ -27,7 +29,7 @@ function PageSingleMovie() {
 
     return (
         <section>
-            {movie !== null && <h2>{movie.title}</h2>}
+            <IndividualMovieCard movie = {movie} />
         </section>
     )
 }

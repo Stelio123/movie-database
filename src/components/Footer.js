@@ -1,4 +1,4 @@
-import { getYear } from '../utilities/utilities';
+
 // import { Route } from 'react-router-dom';
 //use window.loaction??
 
@@ -16,11 +16,7 @@ const Footer = () => (
 				<i class="fab fa-twitter"></i>		
 		</div> */}
 
-        <div className="education-note">
-            <p>For Educational Purposes Only</p>
-            <p>&copy; {getYear()} Stelianos Langaditis</p>
-        </div>
-
+       
     </footer>
 );
 
