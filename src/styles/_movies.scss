@@ -35,6 +35,7 @@
 }
 
 .info-container {
+    text-align: center;
     position: relative;
     margin-left: 12px;
     color: $textColor;
@@ -48,10 +49,4 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 
-}
-
-.vote {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }

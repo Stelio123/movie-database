@@ -16,8 +16,12 @@ p {
 
 }
 
-.heart {
+.voting {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.heart {
+    margin-bottom: 5px;
 }
