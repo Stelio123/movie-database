@@ -1,0 +1,23 @@
+// Singles Page
+@use "./variables"as *;
+@use "./mixins"as *;
+
+
+.mass-poster {
+    margin-top: 5rem;
+    padding: 10px
+}
+
+p {
+    text-align: center;
+    font-size: $font-reg;
+    padding: 10px;
+    line-height: $line-height;
+
+}
+
+.heart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

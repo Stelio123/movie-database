@@ -4,7 +4,8 @@
 @use "mixins"as *;
 
 .movie-box {
-    padding: 1.50rem;
+    padding: 1.5rem;
+
 
     @media (min-width:$desktop) {
         padding: 10px;
@@ -17,10 +18,13 @@
 
 .movie-card {
     background-color: $bgColor;
-    padding: 10px;
+    padding-top: 10px;
     margin-bottom: 10px;
 
+
     img {
+        margin: 5px;
+        // border: 1px solid $orange;
         width: 100%;
     }
 
@@ -32,14 +36,22 @@
 
 .info-container {
     position: relative;
-    text-align: center;
+    margin-left: 12px;
     color: $textColor;
 }
 
 .movie-description {
+    visibility: hidden;
     display: -webkit-box;
     text-overflow: ellipsis;
-    overflow: hidden;
+    font-size: .5px;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+
+}
+
+.vote {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }

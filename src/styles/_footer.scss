@@ -26,3 +26,19 @@ footer {
     flex: wrap;
     justify-content: center;
 }
+
+.icon-styles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-right: 10rem;
+}
+
+.twitter,
+.instagram {
+    margin-top: 10px;
+}
+
+.facebook {
+    margin-top: 7px;
+}
