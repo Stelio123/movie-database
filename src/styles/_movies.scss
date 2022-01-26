@@ -8,10 +8,13 @@
 
 
     @media (min-width:$desktop) {
-        padding: 10px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
+        display: flex;
+        flex-wrap: flex;
+        padding: 5px;
+        justify-content: space-evenly;
+        margin-top: 10rem;
+        margin-bottom: 11rem;
+
     }
 }
 
@@ -24,14 +27,16 @@
 
     img {
         margin: 5px;
-        // border: 1px solid $orange;
         width: 100%;
+        height: auto;
     }
 
 
     @media (min-width:$tabletSmall) {
         margin-bottom: 0;
     }
+
+    @media (min-width: $desktop) {}
 }
 
 .info-container {
@@ -39,6 +44,10 @@
     position: relative;
     margin-left: 12px;
     color: $textColor;
+
+    @media (min-width: $desktop) {
+        display: none;
+    }
 }
 
 .movie-description {
@@ -49,4 +58,5 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 
+    @media (min-width:$desktopLRGE) {}
 }

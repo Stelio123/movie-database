@@ -37,3 +37,5 @@ export const favSlice = createSlice({
 export const { createFav, deleteFav } = favSlice.actions;
 
 export default favSlice.reducer;
+
+

@@ -26,6 +26,8 @@
         width: 100%;
         border-bottom: 3px solid $orange;
         z-index: 999;
+
+        @media (min-width:$desktop) {}
     }
 
     a.nav-link {
@@ -44,7 +46,20 @@
             text-decoration-color: $textColor;
         }
 
+        @media (min-width:$desktop) {
 
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-: 15rem;
+
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: underline;
+                text-decoration-color: $textColor;
+            }
+        }
 
     }
 
@@ -52,6 +67,8 @@
         z-index: 999;
 
     }
+
+    @media (min-width:$desktop) {}
 
 
 
@@ -68,11 +85,8 @@
 }
 
 .btn-main-nav {
-
-    margin-left: 18rem;
-    padding: 5px;
-    padding-top: 10px;
-    padding-left: 2px;
+    padding-top: 15px;
+    padding-right: 15px;
     border: none;
     background: none;
 
@@ -115,13 +129,19 @@
     }
 
     @media (min-width:$tabletSmall) {
-        margin-left: 28rem;
+        margin-bottom: 15rem;
+        padding-right: 15px;
+        border: none;
+        background: none;
 
     }
 
 
     @media (min-width:$desktop) {
-        display: none;
+        padding-top: 15px;
+        padding-right: 15px;
+        border: none;
+        color: $textColor;
     }
 
 }

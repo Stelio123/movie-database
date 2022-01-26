@@ -4,8 +4,27 @@
 
 
 .mass-poster {
-    margin-top: 5rem;
-    padding: 10px
+    margin-top: 3rem;
+    padding: 10px;
+
+    // @media (min-width: $desktop) {
+    //     margin: 0 auto;
+    //     display: block;
+    //     padding: 10px;
+    // }
+
+}
+
+.indiv-poster-container {
+    @media (min-width: $desktop) {
+        margin: 0 auto;
+        display: flex;
+        padding: 10px;
+
+        p {
+            margin-top: 5rem;
+        }
+    }
 }
 
 p {
@@ -16,12 +35,10 @@ p {
 
 }
 
-.voting {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.heart {
-    margin-bottom: 5px;
+.indiv-movie-info-container {
+    text-align: center;
+    position: relative;
+    margin-left: 12px;
+    color: $textColor;
 }

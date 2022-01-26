@@ -8,13 +8,23 @@
 .about-section {
     align-content: center;
     margin-top: 250px;
-    margin-bottom: 261px;
+    margin-bottom: 260px;
     text-align: center;
     padding: 10px;
+
+    @media(min-width: $tabletSmall) {
+        margin-bottom: 335px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 270px;
+    }
+
+    @media(min-width: $desktopOverSized) {
+        margin-bottom: 345px;
+    }
 }
 
 
 
 //Favourites Page
-
-.fav-section {}

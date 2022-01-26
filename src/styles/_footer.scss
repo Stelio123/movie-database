@@ -3,6 +3,7 @@
 @use "./mixins"as *;
 
 footer {
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -21,17 +22,28 @@ footer {
 
 }
 
-.education-note {
-    display: flex;
-    flex: wrap;
-    justify-content: center;
-}
 
 .icon-styles {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-right: 10rem;
+
+    @media (min-width:$tabletSmall) {
+        margin-right: 20rem;
+    }
+
+    @media (min-width:$desktop) {
+        margin-right: 40rem;
+    }
+
+    @media (min-width:$desktopLRGE) {
+        margin-right: 50rem;
+    }
+
+    @media (min-width: $desktopOverSized) {
+        margin-right: 100rem;
+    }
 }
 
 .twitter,

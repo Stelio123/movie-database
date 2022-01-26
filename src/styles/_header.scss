@@ -25,24 +25,47 @@ header {
         text-decoration: underline;
     }
 
-    @media (min-width:$tabletSmall) {
+    .logo {
+        margin-left: 1rem;
+
+
+        @media (min-width:$tabletSmall) {
+            margin-left: 1rem;
+            margin-bottom: 5rem;
+
+        }
+    }
+
+
+    .head {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
-        margin: em(12);
 
-        h1 {
-            margin: 0;
-            text-align: left;
+        @media (min-width:$tabletSmall) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
         }
     }
 
-    @media (min-width: $desktop) {
-        margin: em(20);
+    // @media (min-width:$tabletSmall) {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     margin: em(12);
 
-        h1 {
-            font-size: em(48);
-        }
-    }
+    //     h1 {
+    //         margin: 0;
+    //         text-align: left;
+    //     }
+    // }
+
+    // @media (min-width: $desktop) {
+    //     margin: em(20);
+
+
+    // }
 
 }
