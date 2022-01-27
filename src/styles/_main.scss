@@ -20,25 +20,33 @@
         margin-bottom: 270px;
     }
 
-    @media(min-width: $desktopOverSized) {
-        margin-bottom: 345px;
-    }
 }
 
 .tmdb-section {
     padding: 1rem 1rem 1rem 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    & p {
-        font-size: .75rem;
-    }
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
 }
 
 .tmdb-logo {
+    display: block;
     width: 2rem;
-    margin-right: 1rem;
+    margin-left: 1.75rem;
+
+    @media(min-width:$tabletSmall) {
+        width: 3rem;
+    }
+
+    @media (min-width:$desktop) {
+        width: 3rem;
+    }
+
+    @media (min-width:$desktopLRGE) {
+        width: 3rem;
+
+    }
+
 }
 
 

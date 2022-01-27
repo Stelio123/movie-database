@@ -24,6 +24,14 @@
         padding: 10px;
     }
 
+    @media (min-width: $desktopLRGE) {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        margin-left: 25rem;
+        padding: 10px;
+    }
+
+
 }
 
 .indiv-poster-container {
@@ -42,6 +50,8 @@
             margin-top: 5rem;
         }
     }
+
+    @media (min-width: $desktopLRGE) {}
 }
 
 p {
@@ -55,14 +65,27 @@ p {
 .indiv-movie-title {
     margin: 0;
 
+
+    @media (min-width: $desktopLRGE) {
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
 }
 
 .indiv-release-date {
     margin: 0;
+
+
+
+    @media (min-width: $desktopLRGE) {
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
 }
 
 .indiv-view-rating {
     margin: 0;
+
 }
 
 .heart {
@@ -72,6 +95,10 @@ p {
     @media (min-width:$tabletSmall) {
         padding-right: 10px;
         padding-left: 0;
+    }
+
+    @media (min-width:$desktopLRGE) {
+        padding-top: 85px;
     }
 
 }
@@ -91,6 +118,10 @@ p {
     @media(min-width: $tabletSmall) {
         padding-bottom: 5rem;
     }
+
+    @media (min-width: $desktopLRGE) {
+        padding: 4px;
+    }
 }
 
 
@@ -99,4 +130,8 @@ p {
     position: relative;
     margin-left: 12px;
     color: $textColor;
+
+    @media (min-width: $desktopLRGE) {
+        margin-right: 5rem;
+    }
 }

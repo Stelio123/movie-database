@@ -10,7 +10,7 @@ function Nav() {
 
     
     return (
-            <nav className="site-navigation" onClick={handleBlurOnClick} >
+            <nav className="site-navigation"  onClick={handleBlurOnClick} >
                 <ul>
                     <li><NavLink className="nav-link" to="/">Home</NavLink></li>
                     <li><NavLink className="nav-link" to="/about">About</NavLink></li>

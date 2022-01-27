@@ -20,6 +20,11 @@ footer {
         font-size: 12px;
     }
 
+    li {
+        text-align: center;
+        list-style-type: none;
+    }
+
 }
 
 
@@ -40,10 +45,6 @@ footer {
     @media (min-width:$desktopLRGE) {
         margin-right: 50rem;
     }
-
-    @media (min-width: $desktopOverSized) {
-        margin-right: 100rem;
-    }
 }
 
 .twitter,
@@ -54,3 +55,42 @@ footer {
 .facebook {
     margin-top: 7px;
 }
+
+// .footer-flex {
+
+
+//     @media(min-width:$desktop) {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-evenly;
+
+//     }
+
+//     .footer-nav {
+//         visibility: hidden;
+
+//         @media(min-width:$desktop) {
+
+
+//             .foot-link {
+//                 text-decoration: none;
+//                 display: flex;
+//                 flex-wrap: wrap;
+//                 line-height: 50px;
+//                 font-size: 1.1em;
+//                 font-weight: bold;
+//                 padding: 0 28px;
+
+//                 &:hover,
+//                 &:focus,
+//                 &:active {
+//                     text-decoration: underline;
+//                     text-decoration-color: $textColor;
+//                 }
+//             }
+//         }
+
+
+//     }
+
+// }
