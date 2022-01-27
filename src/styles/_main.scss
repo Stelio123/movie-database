@@ -25,6 +25,22 @@
     }
 }
 
+.tmdb-section {
+    padding: 1rem 1rem 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & p {
+        font-size: .75rem;
+    }
+}
+
+.tmdb-logo {
+    width: 2rem;
+    margin-right: 1rem;
+}
+
 
 
 //Favourites Page

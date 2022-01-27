@@ -7,15 +7,32 @@
     margin-top: 3rem;
     padding: 10px;
 
-    // @media (min-width: $desktop) {
-    //     margin: 0 auto;
-    //     display: block;
-    //     padding: 10px;
-    // }
+    img {
+        margin: 5px;
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width:$tabletSmall) {
+
+        padding: 15px;
+    }
+
+    @media (min-width: $desktop) {
+        margin: 0 auto;
+        display: block;
+        padding: 10px;
+    }
 
 }
 
 .indiv-poster-container {
+
+    @media (min-width:$tabletSmall) {
+        margin: 0 auto;
+    }
+
+
     @media (min-width: $desktop) {
         margin: 0 auto;
         display: flex;
@@ -33,6 +50,47 @@ p {
     padding: 10px;
     line-height: $line-height;
 
+}
+
+.indiv-movie-title {
+    margin: 0;
+
+}
+
+.indiv-release-date {
+    margin: 0;
+}
+
+.indiv-view-rating {
+    margin: 0;
+}
+
+.heart {
+    margin: 5px;
+    padding: 5px;
+
+    @media (min-width:$tabletSmall) {
+        padding-right: 10px;
+        padding-left: 0;
+    }
+
+}
+
+.voting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+.indiv-movie-descrip {
+
+    padding-bottom: 3rem;
+
+    @media(min-width: $tabletSmall) {
+        padding-bottom: 5rem;
+    }
 }
 
 
