@@ -7,9 +7,21 @@
     padding: 1.5rem;
 
 
+    // @media (min-width:$desktop) {
+    //     display: flex;
+    //     flex-wrap: flex;
+    //     padding: 5px;
+    //     justify-content: space-evenly;
+    //     margin-top: 10rem;
+    //     margin-bottom: 11rem;
+
+    // }
+}
+
+.movie-container {
     @media (min-width:$desktop) {
         display: flex;
-        flex-wrap: flex;
+        flex-wrap: wrap;
         padding: 5px;
         justify-content: space-evenly;
         margin-top: 10rem;
@@ -18,11 +30,11 @@
     }
 }
 
-
 .movie-card {
     background-color: $bgColor;
     padding-top: 10px;
     margin-bottom: 10px;
+    max-width: 300px;
 
 
     img {

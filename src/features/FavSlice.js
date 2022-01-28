@@ -6,16 +6,16 @@ function getFav() {
     let favFromStorage = localStorage.getItem(appStorageName);
 
     if(favFromStorage === null){
-        return{ favourite: null}
+        return []
     }else{
         return JSON.parse(favFromStorage);
     }
 }
 
-const favFromStorage = getFav();
+// const favFromStorage = getFav();
 
 const initialState = {
-    favourite: favFromStorage.favourite
+    favourite: getFav()
 };
 
 export const favSlice = createSlice({
@@ -23,16 +23,26 @@ export const favSlice = createSlice({
     initialState,
     reducers: {
         createFav: (state, action) => {
-            const favFromStorage = JSON.stringify(action.payload);
-            localStorage.setItem(appStorageName, favFromStorage);
-            state.favourite = action.payload.favourite;
+            let favForStorage = [...state.favourite, action.payload];
+            localStorage.setItem(appStorageName, JSON.stringify(favForStorage));
+            state.favourite = favForStorage;
         },
-        deleteFav: (state) => {
-            localStorage.removeItem(appStorageName);
-            state.favourite = null;
+        deleteFav: (state, action) => {
+            
+            let favs = state.favourite;
+
+            let index = favs.findIndex(item => item.id === action.payload.id);
+
+            favs.splice(index, 1);
+
+            localStorage.setItem(appStorageName,JSON.stringify(favs));
+
+            state.favourite = favs;
         }
     },
 });
+
+
 
 export const { createFav, deleteFav } = favSlice.actions;
 

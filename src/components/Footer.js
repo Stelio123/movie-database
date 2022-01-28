@@ -1,8 +1,7 @@
 import {NavLink} from "react-router-dom";
 const Footer = () => (
     <footer>
-		<span className='footer-flex'>
-			
+		
 
 			<div className='icon-styles'>
 				<div className='facebook'>
@@ -33,7 +32,6 @@ const Footer = () => (
 				</ul>
 			</div>			
 
-		</span>
 		
 
 		

@@ -1,20 +1,50 @@
 import {Link} from 'react-router-dom';
 import noPoster from '../images/no-movie-poster.jpg';
-import { useState} from 'react';
+import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { createFav, deleteFav } from '../features/FavSlice';
+
+function isFav(favs, movie){
+    //console.log(favs);
+    let item = favs.find(mFav => mFav.id === movie.id);
+    //let item = undefined;
+
+    if(item === undefined){
+        return false;
+    }else {
+        return true;
+    }
+
+
+}
 
 function MovieCard({movie}) {
 
-    const [isLiked, setIsLiked] = useState(false);
+
+    const favs = useSelector((state) => state.favs.favourite);
+    const dispatch = useDispatch();
+
+    const [isLiked, setIsLiked] = useState(isFav(favs, movie));
 
     const dateFormat = (string) => {
         let options = {year:'numeric', month: 'long', day:'numeric'};
         return new Date(string).toLocaleDateString([],options);
     }
 
+    function handleClick(){
+        if(isLiked === true){
+            dispatch(deleteFav(movie));
+            setIsLiked(false);
+        }else{
+            dispatch(createFav(movie));
+            setIsLiked(true);
+        }
+    }
 
 
     return (
         <div className="movie-box">
+            {console.log(favs)}
             <div className="movie-card">
                 {movie.poster_path === null ?
                 <img src={noPoster} alt="No Poster" /> :
@@ -24,10 +54,12 @@ function MovieCard({movie}) {
             <div className="info-container">
                 <h3 className="movie-title">{movie.title}</h3>
                 <h4 className="movie-date">{dateFormat(movie.release_date)}</h4>
-                <span className="vote">
+                <div className="vote">
                 <h4 className="movie-rating">{movie.vote_average *10}%</h4>
-               <div className="like" onClick ={() => setIsLiked(!isLiked)}>{isLiked ? <LikeHeart/>:<UnLikeHeart/>}</div>
-                </span>
+                    <div className="like" onClick ={handleClick}>
+                        {isLiked ? <LikeHeart/> : <UnLikeHeart/>}
+                    </div>
+                </div>
                 <p className='movie-description'>{movie.overview}</p>
             </div>
     

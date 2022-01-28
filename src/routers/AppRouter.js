@@ -28,7 +28,7 @@ function AppRouter() {
               <Route path="sort/upcoming" element={<PageHome sort="upcoming"/>} />
               <Route path="movie/:id" element={<PageSingleMovie />} />
               <Route path="about" element={<PageAbout />} />
-              <Route path="favourite" element={<PageFavourite />} />
+              <Route path="favourites" element={<PageFavourite />} />
               {/* <Route><PageNotFound/></Route> */}
             </Routes>
           </main>

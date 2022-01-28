@@ -11,7 +11,7 @@ footer {
     background-color: $orange;
     height: 50px;
     border-top: 2px solid $orange;
-    padding: em(20);
+
 
     p {
 
@@ -27,70 +27,92 @@ footer {
 
 }
 
+footer {
+    @media (min-width:$desktop) {
+
+        display: flex;
+    }
+}
 
 .icon-styles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-right: 10rem;
+    justify-content: flex-start;
+
 
     @media (min-width:$tabletSmall) {
-        margin-right: 20rem;
+        // margin-right: 20rem;
     }
 
     @media (min-width:$desktop) {
-        margin-right: 40rem;
+        // width: 300px;
     }
 
     @media (min-width:$desktopLRGE) {
-        margin-right: 50rem;
+        // margin-right: 50rem;
     }
 }
 
 .twitter,
-.instagram {
-    margin-top: 10px;
-}
-
+.instagram,
 .facebook {
-    margin-top: 7px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 0px 20px;
+
+
+    // @media (min-width:$desktop) {
+    //     width: 300px;
+    //     display: flex;
+    // }
 }
 
-// .footer-flex {
 
 
-//     @media(min-width:$desktop) {
-//         display: flex;
-//         flex-wrap: wrap;
-//         justify-content: space-evenly;
-
-//     }
-
-//     .footer-nav {
-//         visibility: hidden;
-
-//         @media(min-width:$desktop) {
 
 
-//             .foot-link {
-//                 text-decoration: none;
-//                 display: flex;
-//                 flex-wrap: wrap;
-//                 line-height: 50px;
-//                 font-size: 1.1em;
-//                 font-weight: bold;
-//                 padding: 0 28px;
 
-//                 &:hover,
-//                 &:focus,
-//                 &:active {
-//                     text-decoration: underline;
-//                     text-decoration-color: $textColor;
-//                 }
-//             }
-//         }
-
-
-//     }
+// @media(min-width:$desktop) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-evenly;
 
 // }
+
+.footer-nav {
+    display: none;
+
+
+    @media(min-width:$desktop) {
+        display: flex;
+        justify-self: flex-end;
+
+
+
+    }
+
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+
+}
+
+.foot-link {
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0px 20px 50px 28px;
+
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+        text-decoration-color: $textColor;
+    }
+}
