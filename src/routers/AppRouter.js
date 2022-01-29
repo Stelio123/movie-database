@@ -8,7 +8,7 @@ import Nav from '../components/Nav';
 // Pages
 import PageHome from '../pages/PageHome';
 import PageAbout from '../pages/PageAbout';
-import PageFavourite from '../pages/PageFavourite';
+import PageFavourites from '../pages/PageFavourite';
 // import PageNotFound from '../pages/PageNotFound';
 import PageSingleMovie from '../pages/PageSingleMovie';
 
@@ -28,7 +28,7 @@ function AppRouter() {
               <Route path="sort/upcoming" element={<PageHome sort="upcoming"/>} />
               <Route path="movie/:id" element={<PageSingleMovie />} />
               <Route path="about" element={<PageAbout />} />
-              <Route path="favourites" element={<PageFavourite />} />
+              <Route path="favourites" element={<PageFavourites />} />
               {/* <Route><PageNotFound/></Route> */}
             </Routes>
           </main>

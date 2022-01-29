@@ -44,7 +44,6 @@ function MovieCard({movie}) {
 
     return (
         <div className="movie-box">
-            {console.log(favs)}
             <div className="movie-card">
                 {movie.poster_path === null ?
                 <img src={noPoster} alt="No Poster" /> :

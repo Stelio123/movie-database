@@ -12,7 +12,6 @@ function getFav() {
     }
 }
 
-// const favFromStorage = getFav();
 
 const initialState = {
     favourite: getFav()

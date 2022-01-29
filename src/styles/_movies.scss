@@ -3,22 +3,21 @@
 @use "variables"as *;
 @use "mixins"as *;
 
-.movie-box {
-    padding: 1.5rem;
 
-
-    // @media (min-width:$desktop) {
-    //     display: flex;
-    //     flex-wrap: flex;
-    //     padding: 5px;
-    //     justify-content: space-evenly;
-    //     margin-top: 10rem;
-    //     margin-bottom: 11rem;
-
-    // }
-}
 
 .movie-container {
+    display: block;
+    margin: 0 auto;
+    padding: 30px 10px 20px 0px;
+
+
+    @media (min-width: $tabletSmall) {
+        display: block;
+
+
+    }
+
+
     @media (min-width:$desktop) {
         display: flex;
         flex-wrap: wrap;
@@ -30,22 +29,35 @@
     }
 }
 
+.movie-box {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 10px 30px 10px;
+
+
+}
+
+
+
 .movie-card {
-    background-color: $bgColor;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 60px 30px 10px;
+    max-width: 400px;
 
 
     img {
-        margin: 5px;
+        margin: 2rem;
         width: 100%;
         height: auto;
+        display: block;
+        border: 1px solid $orange;
     }
 
 
     @media (min-width:$tabletSmall) {
-        margin-bottom: 0;
+        max-width: 400px;
+
     }
 
     @media (min-width: $desktop) {}
@@ -54,7 +66,7 @@
 .info-container {
     text-align: center;
     position: relative;
-    margin-left: 12px;
+    padding: 0px 10px 0px 10px;
     color: $textColor;
 
     @media (min-width: $desktop) {
@@ -62,13 +74,32 @@
     }
 }
 
+.vote {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 10px 20px 10px;
+
+    @media(min-width:$tabletSmall) {
+        padding: 0px 10px 20px 10px;
+    }
+}
+
+.movie-rating,
+.like {
+    display: block;
+    margin: 0;
+}
+
 .movie-description {
-    visibility: hidden;
-    display: -webkit-box;
-    text-overflow: ellipsis;
-    font-size: .5px;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    display: none;
+    // visibility: hidden;
+    // display: -webkit-box;
+    // text-overflow: ellipsis;
+    // font-size: .5px;
+    // -webkit-line-clamp: 3;
+    // -webkit-box-orient: vertical;
 
     @media (min-width:$desktopLRGE) {}
 }

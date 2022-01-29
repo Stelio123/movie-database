@@ -3,4 +3,3 @@ export const API_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzMzNjYjliNmE2NTRhZmUxN
 export const APP_FOLDER_NAME = 'movie-databse';
 export const appTitle = 'SNOS MOVIES';
 export const appStorageName = 'favMovie';
-export const STORAGE_YOUR_MOVIES = 'your-fav-movies';

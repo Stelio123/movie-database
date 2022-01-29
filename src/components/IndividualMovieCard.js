@@ -1,13 +1,45 @@
 import {useState} from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { createFav, deleteFav } from '../features/FavSlice';
 import noPoster from "../images/no-movie-poster.jpg";
-function IndividualMovieCard({ movie }) {
+
+function isFav(favs, movie){
+  //console.log(favs);
+  let item = favs.find(mFav => mFav.id === movie.id);
+  //let item = undefined;
+
+  if(item === undefined){
+      return false;
+  }else {
+      return true;
+  }
+
+
+}
+function IndividualMovieCard({ movie}) {
+
+    const favs = useSelector((state) => state.favs.favourite);
+    const dispatch = useDispatch();
+
+
+    const [isLiked, setIsLiked] = useState(isFav(favs, movie));
 
     const dateFormat = (string) => {
         let options = {year:'numeric', month: 'long', day:'numeric'};
         return new Date(string).toLocaleDateString([],options);
     }
 
-    const [isLiked, setIsLiked] = useState(false);
+    function handleClick(){
+      if(isLiked === true){
+          dispatch(deleteFav(movie));
+          setIsLiked(false);
+      }else{
+          dispatch(createFav(movie));
+          setIsLiked(true);
+      }
+    }
+
+   
 
 
   if (!movie) {
@@ -31,7 +63,8 @@ function IndividualMovieCard({ movie }) {
             <p className="indiv-release-date">{dateFormat(movie.release_date)}</p>
             <span className='voting' >
             <p className="indiv-view-rating">{movie.vote_average*10}%</p>
-            <div className='heart' onClick ={() => setIsLiked(!isLiked)}>{isLiked ? <LikeHeart/>:<UnLikeHeart/>}</div>
+            <div className='heart' onClick ={handleClick}>
+              {isLiked ? <LikeHeart/>:<UnLikeHeart/>}</div>
             </span>
             <p className="indiv-movie-descrip">{movie.overview}</p>
           </div>

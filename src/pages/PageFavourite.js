@@ -1,8 +1,4 @@
 // Page - Favourite
-import { useState } from 'react';
-//import { Link } from 'react-router-dom';
-//import {isItemInStorage, setStorage, removeFromStorage} from '../features/Storage';
-import noPoster from '../images/no-movie-poster.jpg';
 import { useSelector } from 'react-redux';
 import MovieCard from '../components/MovieCard';
 
@@ -14,12 +10,13 @@ function PageFavourites() {
     const favs = useSelector((state) => state.favs.favourite);
 
     return (
-        <div className="movie-container">
+        <div className="fav-movie-container">
             {favs.length < 1 ? 
-                <p>No Favs</p>: 
+                <p className="fav-text">Sorry you have no favourited movies. Return to the home page to add a movie to your favourites.</p>: 
                 favs.map(movie => <MovieCard key={movie.id} movie={movie} /> )
             }
         </div>
+        
     );
 
     

@@ -6,11 +6,10 @@
 //About Page
 
 .about-section {
-    align-content: center;
-    margin-top: 250px;
-    margin-bottom: 260px;
+    display: block;
+    margin: 0 auto;
     text-align: center;
-    padding: 10px;
+    padding: 15rem 10px 0px 10px;
 
     @media(min-width: $tabletSmall) {
         margin-bottom: 335px;
@@ -52,3 +51,173 @@
 
 
 //Favourites Page
+
+
+.fav-movie-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5rem 10px 0px 10px;
+
+
+
+    .fav-text {
+        display: block;
+        margin-top: 250px;
+        text-align: center;
+        padding: 10px;
+
+        @media(min-width: $tabletSmall) {
+            margin-top: 300px;
+            padding: 20px;
+
+        }
+
+        @media (min-width: $desktop) {}
+    }
+
+
+}
+
+
+//Single Movie Page
+
+.mass-poster {
+    display: block;
+    margin: 0 auto;
+    padding: 60px 10px 10px 10px;
+    max-width: 250px;
+
+    img {
+        margin: 2rem;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    @media (min-width:$tabletSmall) {
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+        padding: 80px 20px 15px 30px;
+    }
+
+    @media (min-width: $desktop) {
+        margin: 0 auto;
+        display: block;
+        padding: 10px;
+    }
+
+    @media (min-width: $desktopLRGE) {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        margin-left: 25rem;
+        padding: 10px;
+    }
+
+
+}
+
+.indiv-poster-container {
+
+    @media (min-width:$tabletSmall) {
+        margin: 0 auto;
+    }
+
+
+    @media (min-width: $desktop) {
+        margin: 0 auto;
+        display: flex;
+        padding: 10px;
+
+        p {
+            margin-top: 5rem;
+        }
+    }
+
+    @media (min-width: $desktopLRGE) {}
+}
+
+p {
+    text-align: center;
+    font-size: $font-reg;
+    padding: 10px;
+    line-height: $line-height;
+
+}
+
+.indiv-movie-title {
+    margin: 0;
+
+
+    @media (min-width: $desktopLRGE) {
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+}
+
+.indiv-release-date {
+    margin: 0;
+
+
+
+    @media (min-width: $desktopLRGE) {
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+}
+
+.indiv-view-rating {
+    margin: 0;
+
+}
+
+.heart {
+    margin: 5px;
+    padding: 5px;
+
+    @media (min-width:$tabletSmall) {
+        padding-right: 10px;
+        padding-left: 0;
+    }
+
+    @media (min-width:$desktopLRGE) {
+        padding-top: 85px;
+    }
+
+}
+
+.voting {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 10px 0px 10px;
+
+
+}
+
+.indiv-movie-descrip {
+
+    padding-bottom: 3rem;
+
+    @media(min-width: $tabletSmall) {
+        padding-bottom: 5rem;
+    }
+
+    @media (min-width: $desktopLRGE) {
+        padding: 4px;
+    }
+}
+
+
+.indiv-movie-info-container {
+    text-align: center;
+    position: relative;
+    margin-left: 12px;
+    color: $textColor;
+
+    @media (min-width: $desktopLRGE) {
+        margin-right: 5rem;
+    }
+}
