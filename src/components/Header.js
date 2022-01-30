@@ -1,6 +1,7 @@
 // Header
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import Nav from './Nav';
 
 function Header () {
@@ -14,7 +15,7 @@ function Header () {
 
     return (
         <header>
-            <span className='head'>
+            <div className='head'>
                 <div className="logo">
                     <Link to= '/'><svg xmlns="http://www.w3.org/2000/svg" width="106.916" height="48" viewBox="0 0 106.916 48">
                         <g id="logo" transform="translate(-45 -3)">
@@ -33,12 +34,16 @@ function Header () {
                     </button>
                     <Nav showHideNav={showHideNav} />       
                 </div>                
-            </span>
+       
 
-            <div className="header-nav">
-                
+                <div className="header-nav">
+                    <ul>
+                        <li><NavLink className="head-link" to="/">Home</NavLink></li>
+                        <li><NavLink className="head-link" to="about">About</NavLink></li> 
+                        <li><NavLink className="head-link" to="favourites">Favourites</NavLink></li>
+                    </ul>
+                </div>			
             </div>
-            
            
         </header>
     );

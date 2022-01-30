@@ -16,7 +16,7 @@ function isFav(favs, movie){
 
 
 }
-function IndividualMovieCard({ movie}) {
+function IndividualMovieCard({movie}) {
 
     const favs = useSelector((state) => state.favs.favourite);
     const dispatch = useDispatch();

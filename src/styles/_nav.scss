@@ -153,10 +153,11 @@
 
 
     @media (min-width:$desktop) {
-        padding-top: 15px;
-        padding-right: 15px;
-        border: none;
-        color: $textColor;
+        display: none;
+    }
+
+    @media(min-width: $desktopLRGE) {
+        display: none;
     }
 
 }

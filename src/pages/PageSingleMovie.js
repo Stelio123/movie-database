@@ -29,7 +29,7 @@ function PageSingleMovie() {
 
     return (
         <section>
-            <IndividualMovieCard movie = {movie} />
+            <IndividualMovieCard movie = {movie} /> 
         </section>
     )
 }
