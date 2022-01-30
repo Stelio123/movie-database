@@ -51,7 +51,8 @@
         width: 100%;
         height: auto;
         display: block;
-        border: 1px solid $orange;
+        border: 3px solid $orange;
+        border-radius: 10px;
     }
 
 
@@ -62,6 +63,10 @@
 
     @media (min-width: $desktop) {
         max-width: 300px;
+    }
+
+    @media (min-width:$desktopLRGE) {
+        max-width: 400px;
     }
 }
 
