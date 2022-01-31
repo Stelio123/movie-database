@@ -17,10 +17,6 @@ header {
 
     }
 
-    h1 {
-        margin: em(2) 0 em(6);
-        text-align: left;
-    }
 
     a {
         text-decoration: none;
@@ -74,30 +70,44 @@ header {
 
 .header-nav {
     display: none;
+    position: fixed;
 
 
     @media(min-width:$desktop) {
         display: block;
         margin: 0 auto;
+        padding: 0px 0px 0px 29rem;
+
     }
 
     @media (min-width:$desktopLRGE) {
         display: block;
         margin: 0 auto;
+        padding: 0px 0px 0px 42rem;
+
+    }
+
+    @media (min-width:$desktopOversized) {
+        padding: 0px 0px 0px 65rem;
+
+    }
+
+    @media(min-width: $desktopBiggest) {
+        padding: 0px 10px 0px 93rem;
     }
 
 }
 
 .header-nav ul {
+    position: fixed;
     display: flex;
     list-style-type: none;
-    margin: 0;
-
-
+    margin: 0 auto;
 
 }
 
 .head-link {
+    margin: 0 auto;
     text-decoration: none;
     line-height: 50px;
     font-size: $font-reg;

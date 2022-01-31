@@ -19,6 +19,8 @@
         margin-bottom: 270px;
     }
 
+    @media(min-width: $desktopLRGE) {}
+
 }
 
 .tmdb-section {
@@ -106,17 +108,22 @@
 
     @media (min-width: $desktop) {
         display: flex;
-        max-width: 350px;
+        max-width: 300px;
 
     }
 
     @media (min-width: $desktopLRGE) {
         display: flex;
         margin: 10px;
-        max-width: 400px;
+        max-width: 300px;
 
 
     }
+
+    @media (min-width: $desktopBiggest) {
+        max-width: 500px;
+    }
+
 }
 
 
@@ -150,6 +157,10 @@
         padding: 100px 10px 0px 50px;
 
     }
+
+    @media(min-width:$desktopBiggest) {
+        padding: 100px 10px 0px 100px;
+    }
 }
 
 p {
@@ -162,6 +173,7 @@ p {
 
 .indiv-movie-title {
     margin: 0 auto;
+    padding: 10px 0px 0px 0px;
 
 
     @media (min-width: $desktopLRGE) {
@@ -251,5 +263,10 @@ p {
         display: block;
         margin: 0 auto;
         padding: 200px 0px 10px 0px;
+    }
+
+    @media (min-width: $desktopBiggest) {
+        padding: 250px 0px 10px 50px;
+        font-size: $font-lrg;
     }
 }

@@ -24,14 +24,15 @@ footer {
         list-style-type: none;
     }
 
-}
-
-footer {
     @media (min-width:$desktop) {
-
         display: flex;
     }
+
+    @media(min-width: $desktopLRGE) {}
+
 }
+
+
 
 .icon-styles {
     display: flex;
@@ -39,13 +40,13 @@ footer {
     justify-content: flex-start;
 
 
-    @media (min-width:$tabletSmall) {
-        // margin-right: 20rem;
-    }
+    // @media (min-width:$tabletSmall) {
+    //     // margin-right: 20rem;
+    // }
 
-    @media (min-width:$desktop) {
-        // width: 300px;
-    }
+    // @media (min-width:$desktop) {
+    //     padding: 0px 0px 0px 10px;
+    // }
 
     @media (min-width:$desktopLRGE) {
         display: flex;
@@ -62,8 +63,21 @@ footer {
     align-items: center;
     margin: 0px 10px 0px 20px;
 
+    &:hover,
+    &:focus,
+    &:active {
+
+        text-decoration: underline;
+        text-decoration-color: $textColor;
+
+    }
+
+    @media(min-width:$desktop) {
+        margin: 0px 20px 0px 20px;
+    }
+
     @media(min-width:$desktopLRGE) {
-        padding: 0px 0px 0px 60px;
+        padding: 0px 0px 0px 35px;
     }
 }
 
@@ -75,9 +89,6 @@ footer {
     @media(min-width:$desktop) {
         display: flex;
         justify-self: flex-end;
-
-
-
     }
 
 }
@@ -85,10 +96,22 @@ footer {
 .footer-nav ul {
     display: flex;
     justify-content: flex-end;
-    margin: 0;
+    margin: 0 auto;
+
+    @media (min-width:$desktop) {
+        padding-right: 5px
+    }
 
     @media (min-width:$desktopLRGE) {
         margin: 0px 10px 0px 10rem;
+    }
+
+    @media (min-width:$desktopOversized) {
+        margin: 0px 10px 0px 35rem;
+    }
+
+    @media(min-width: $desktopBiggest) {
+        margin: 0px 10px 0px 60rem;
     }
 
 }

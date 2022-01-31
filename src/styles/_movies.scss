@@ -55,12 +55,12 @@
 
 
     @media (min-width:$tabletSmall) {
-        max-width: 400px;
+        max-width: 300px;
 
     }
 
     @media (min-width: $desktop) {
-        max-width: 350px;
+        max-width: 300px;
 
         :hover {
             background-color: #f4511e;
@@ -76,7 +76,7 @@
     }
 
     @media (min-width:$desktopLRGE) {
-        padding: 10px 60px 20px 10px;
+        padding: 0px 60px 20px 10px;
         max-width: 400px;
     }
 }
@@ -84,12 +84,16 @@
 
 
 .info-container {
+    display: block;
     text-align: center;
     padding: 0px 10px 0px 10px;
     color: $textColor;
 
     @media (min-width: $desktop) {
         display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: $font-small;
 
     }
 }
@@ -120,5 +124,16 @@
 
 .movie-description {
     display: none;
+
+    // @media (min-width:$desktop) {
+    //     display: flex;
+    //     flex-wrap: nowrap;
+    //     position: relative;
+    //     margin: 0 auto;
+    //     text-align: center;
+    //     padding: 0px 30px 0px 700px;
+    //     transform: translate(-32.5%, -300%);
+    //     font-size: $font-small;
+    // }
 
 }
