@@ -14,7 +14,6 @@ function isFav(favs, movie){
       return true;
   }
 
-
 }
 
 function IndividualMovieCard({movie}) {
