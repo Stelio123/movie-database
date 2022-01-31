@@ -143,6 +143,8 @@
         display: flex;
         flex-wrap: nowrap;
         padding: 150px 20px 0px 50px;
+        max-width: 1000px;
+        margin: 0 auto;
 
         p {
             display: block;

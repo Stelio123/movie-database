@@ -4,9 +4,7 @@ import { createFav, deleteFav } from '../features/FavSlice';
 import noPoster from "../images/no-movie-poster.jpg";
 
 function isFav(favs, movie){
-  //console.log(favs);
   let item = favs.find(mFav => mFav.id === movie.id);
-  //let item = undefined;
 
   if(item === undefined){
       return false;
@@ -39,17 +37,14 @@ function IndividualMovieCard({movie}) {
       }
     }
 
-   
-
 
   if (!movie) {
     return null;
   } else {
-    // is a movie
     return (
       <>
         <div className="indiv-poster-container">
-          {movie.poster_path === null ? (
+          {movie.poster_path === null? (
             <img src={noPoster} alt="No Poster" />
           ) : (
             <img
@@ -64,7 +59,7 @@ function IndividualMovieCard({movie}) {
             <span className='voting' >
             <p className="indiv-view-rating">{movie.vote_average*10}%</p>
             <div className='heart' onClick ={handleClick}>
-              {isLiked ? <LikeHeart/>:<UnLikeHeart/>}</div>
+              {isLiked === true ? <LikeHeart/>:<UnLikeHeart/>}</div>
             </span>
             <p className="indiv-movie-descrip">{movie.overview}</p>
           </div>

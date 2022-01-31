@@ -14,8 +14,8 @@ function Header () {
 
 
     return (
-        <header>
-            <div className='head'>
+        <header className='head'>
+           
                 <div className="logo">
                     <Link to= '/'><svg xmlns="http://www.w3.org/2000/svg" width="106.916" height="48" viewBox="0 0 106.916 48">
                         <g id="logo" transform="translate(-45 -3)">
@@ -43,7 +43,7 @@ function Header () {
                         <li><NavLink className="head-link" to="favourites">Favourites</NavLink></li>
                     </ul>
                 </div>			
-            </div>
+          
            
         </header>
     );

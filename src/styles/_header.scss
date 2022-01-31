@@ -4,6 +4,8 @@
 @use "./mixins"as *;
 
 header {
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100%;
@@ -24,27 +26,6 @@ header {
 
     a:hover {
         text-decoration: underline;
-    }
-
-
-
-
-    .head {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        @media (min-width:$tabletSmall) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-        }
-
-        @media (min-width:$desktop) {
-            display: flex;
-            flex-wrap: nowrap;
-        }
     }
 
 }
@@ -75,14 +56,11 @@ header {
 
     @media(min-width:$desktop) {
         display: block;
-        margin: 0 auto;
         padding: 0px 0px 0px 29rem;
 
     }
 
     @media (min-width:$desktopLRGE) {
-        display: block;
-        margin: 0 auto;
         padding: 0px 0px 0px 42rem;
 
     }

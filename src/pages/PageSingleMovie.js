@@ -11,7 +11,7 @@ function PageSingleMovie() {
     },[]);
 
     const {id} = useParams();
-    const [movie, setMovie] = useState(null);
+    const [movieData, setMovieData] = useState(false);
 
     // https://api.themoviedb.org/3/movie/438695?api_key=333cb9b6a654afe173fed9c0305cc79c&language=en-US
 
@@ -20,7 +20,7 @@ function PageSingleMovie() {
         const getMovie = async () => {
             const res = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=en-U`);
             const movieDataFromAPI = await res.json();
-            setMovie(movieDataFromAPI);
+            setMovieData(movieDataFromAPI);
         }
 
         getMovie();
@@ -29,9 +29,9 @@ function PageSingleMovie() {
 
     return (
         <section>
-            <IndividualMovieCard movie = {movie} /> 
+            {movieData !== false && <IndividualMovieCard movie={movieData} /> }
         </section>
-    )
+    );
 }
 
 export default PageSingleMovie
