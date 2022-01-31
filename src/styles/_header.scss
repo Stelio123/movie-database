@@ -55,18 +55,18 @@ header {
 
 .logo {
     display: block;
-    margin: 0 auto;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 10px 10px 20px;
 
 
     @media (min-width:$tabletSmall) {
-        padding: 0px 20rem 10px 0px;
+        padding: 0px 20rem 10px 20px;
     }
 
     @media(min-width: $desktop) {
-        padding: 0px 15rem 10px 70px;
+        padding: 0px 15rem 10px 50px;
     }
 }
+
 
 
 

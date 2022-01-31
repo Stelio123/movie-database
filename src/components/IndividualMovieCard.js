@@ -16,6 +16,7 @@ function isFav(favs, movie){
 
 
 }
+
 function IndividualMovieCard({movie}) {
 
     const favs = useSelector((state) => state.favs.favourite);
@@ -59,7 +60,7 @@ function IndividualMovieCard({movie}) {
             />
           )}
           <div className="indiv-movie-info-container">
-            <p className="indiv-movie-title">{movie.title}</p>
+            <h3 className="indiv-movie-title">{movie.title}</h3>
             <p className="indiv-release-date">{dateFormat(movie.release_date)}</p>
             <span className='voting' >
             <p className="indiv-view-rating">{movie.vote_average*10}%</p>

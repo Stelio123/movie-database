@@ -20,10 +20,8 @@
     @media (min-width:$desktop) {
         display: flex;
         flex-wrap: wrap;
-        padding: 5px;
+        padding: 30px 0px 20px 10px;
         justify-content: space-evenly;
-        margin-top: 10rem;
-        margin-bottom: 10rem;
 
     }
 }
@@ -32,7 +30,6 @@
     display: block;
     margin: 0 auto;
     padding: 10px 10px 30px 10px;
-
 
 
 }
@@ -53,6 +50,7 @@
         display: block;
         border: 3px solid $orange;
         border-radius: 10px;
+
     }
 
 
@@ -62,26 +60,41 @@
     }
 
     @media (min-width: $desktop) {
-        max-width: 300px;
+        max-width: 350px;
+
+        :hover {
+            background-color: #f4511e;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            opacity: 0.6;
+            transition: 0.3s;
+
+        }
     }
 
     @media (min-width:$desktopLRGE) {
+        padding: 10px 60px 20px 10px;
         max-width: 400px;
     }
 }
 
+
+
 .info-container {
     text-align: center;
-    position: relative;
     padding: 0px 10px 0px 10px;
     color: $textColor;
 
     @media (min-width: $desktop) {
         display: block;
-        margin: 0 auto;
-        font-size: $font-small;
+
     }
 }
+
+
 
 .vote {
     display: flex;
@@ -99,16 +112,13 @@
 .like {
     display: block;
     margin: 0;
+
+
 }
+
+
 
 .movie-description {
     display: none;
-    // visibility: hidden;
-    // display: -webkit-box;
-    // text-overflow: ellipsis;
-    // font-size: .5px;
-    // -webkit-line-clamp: 3;
-    // -webkit-box-orient: vertical;
 
-    @media (min-width:$desktopLRGE) {}
 }
