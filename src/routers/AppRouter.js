@@ -15,7 +15,7 @@ import PageSingleMovie from '../pages/PageSingleMovie';
 
 function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="snos-movies">
       <div className="wrapper">
         <Header />
         <Nav />
