@@ -1,0 +1,110 @@
+//header 
+
+@use "./variables"as *;
+@use "./mixins"as *;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $orange;
+    height: 50px;
+    font-size: $font-reg;
+    z-index: 1000;
+
+    @media (min-width:$desktop) {
+        display: flex;
+
+    }
+
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+}
+
+.logo {
+    display: block;
+    padding: 0px 10px 10px 20px;
+
+
+    @media (min-width:$tabletSmall) {
+        padding: 0px 20rem 10px 20px;
+    }
+
+    @media(min-width: $desktop) {
+        padding: 0px 15rem 10px 50px;
+    }
+}
+
+
+
+
+
+
+.header-nav {
+    display: none;
+    position: fixed;
+
+
+    @media(min-width:$desktop) {
+        display: block;
+        padding: 0px 0px 0px 29rem;
+
+    }
+
+    @media (min-width:$desktopLRGE) {
+        padding: 0px 0px 0px 42rem;
+
+    }
+
+    @media (min-width:$desktopOversized) {
+        padding: 0px 0px 0px 65rem;
+
+    }
+
+    @media(min-width: $desktopBiggest) {
+        padding: 0px 10px 0px 93rem;
+    }
+
+}
+
+.header-nav ul {
+    position: fixed;
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+
+}
+
+.head-link {
+    margin: 0 auto;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: $font-reg;
+    font-weight: bold;
+    padding: 0px 20px 0px 15px;
+
+
+
+
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+        text-decoration-color: $textColor;
+    }
+}
+
+.logo .header-nav {
+    display: flex;
+
+}

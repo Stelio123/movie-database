@@ -1,0 +1,274 @@
+//Main
+
+@use "./variables"as *;
+@use "./mixins"as *;
+
+//About Page
+
+.about-section {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15rem 10px 0px 10px;
+
+    @media(min-width: $tabletSmall) {
+        margin-bottom: 335px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 270px;
+    }
+
+    @media(min-width: $desktopLRGE) {}
+
+}
+
+.tmdb-section {
+    padding: 1rem 1rem 1rem 0;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+
+.tmdb-logo {
+    display: block;
+    width: 2rem;
+    margin-left: 1.75rem;
+
+    @media(min-width:$tabletSmall) {
+        width: 3rem;
+    }
+
+    @media (min-width:$desktop) {
+        width: 3rem;
+    }
+
+    @media (min-width:$desktopLRGE) {
+        width: 3rem;
+
+    }
+
+}
+
+
+
+//Favourites Page
+
+
+.fav-movie-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5rem 10px 0px 10px;
+
+    @media (min-width:$desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 0px 20px 10px;
+        justify-content: space-evenly;
+
+    }
+
+
+
+    .fav-text {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 15rem 10px 0px 10px;
+
+
+        @media (min-width: $desktop) {
+            margin: 0 auto;
+            padding: 18rem 10px 0px 10px;
+
+
+        }
+    }
+
+
+}
+
+
+//Single Movie Page
+
+.mass-poster {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    border: 3px solid $orange;
+    border-radius: 10px;
+
+
+    @media (min-width:$tabletSmall) {
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    @media (min-width: $desktop) {
+        display: flex;
+        max-width: 300px;
+
+    }
+
+    @media (min-width: $desktopLRGE) {
+        display: flex;
+        margin: 10px;
+        max-width: 300px;
+
+
+    }
+
+    @media (min-width: $desktopBiggest) {
+        max-width: 500px;
+    }
+
+}
+
+
+.indiv-poster-container {
+    display: block;
+    margin: 0 auto;
+    padding: 60px 10px 0px 10px;
+
+    @media (min-width:$tabletSmall) {
+        margin: 0 auto;
+        padding: 60px 10px 0px 10px;
+    }
+
+
+    @media (min-width: $desktop) {
+
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 150px 20px 0px 50px;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        p {
+            display: block;
+            text-align: center;
+            padding: 0px 20px 10px 10px
+        }
+    }
+
+    @media (min-width: $desktopLRGE) {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 100px 10px 0px 50px;
+
+    }
+
+    @media(min-width:$desktopBiggest) {
+        padding: 100px 10px 0px 100px;
+    }
+}
+
+p {
+    text-align: center;
+    font-size: $font-reg;
+    padding: 10px;
+    line-height: $line-height;
+
+}
+
+.indiv-movie-title {
+    margin: 0 auto;
+    padding: 10px 0px 0px 0px;
+
+
+    @media (min-width: $desktopLRGE) {
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+}
+
+.indiv-release-date {
+    margin: 0;
+
+
+    @media(min-width:$desktop) {
+        padding: 40px;
+    }
+
+
+    @media (min-width: $desktopLRGE) {
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+}
+
+.indiv-view-rating {
+    margin: 0;
+
+}
+
+.heart {
+    margin: 5px;
+    padding: 5px;
+
+    @media (min-width:$tabletSmall) {
+        padding: 10px 10px 10px 0px;
+    }
+
+    @media (min-width:$desktop) {
+        padding: 10px 20px 20px 0px;
+
+    }
+
+}
+
+.voting {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 10px 0px 10px;
+
+
+    @media (min-width: $desktopLRGE) {
+        padding: 0px 30px 0px 30px;
+    }
+
+
+}
+
+.indiv-movie-descrip {
+
+    padding-bottom: 3rem;
+
+    @media(min-width: $tabletSmall) {
+        padding-bottom: 5rem;
+    }
+
+    @media (min-width: $desktopLRGE) {
+        padding: 4px;
+    }
+}
+
+
+.indiv-movie-info-container {
+    text-align: center;
+    position: relative;
+    margin-left: 12px;
+    color: $textColor;
+
+    @media (min-width: $desktop) {
+        display: block;
+        margin: 0 auto;
+        padding: 150px 0px 10px 50px;
+    }
+
+
+    @media (min-width: $desktopLRGE) {
+        display: block;
+        margin: 0 auto;
+        padding: 200px 0px 10px 0px;
+    }
+
+    @media (min-width: $desktopBiggest) {
+        padding: 250px 0px 10px 50px;
+        font-size: $font-lrg;
+    }
+}

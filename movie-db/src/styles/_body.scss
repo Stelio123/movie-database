@@ -1,0 +1,10 @@
+// Body
+
+@use "./variables"as *;
+@use "./mixins"as *;
+
+
+body {
+    background-color: $bgColor;
+
+}

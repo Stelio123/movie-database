@@ -1,0 +1,28 @@
+//Variables
+
+
+//Colors
+$orange: #bf451c;
+$hover-orange: lighten($orange, 20);
+$bgColor:#000000;
+
+//Text Colors
+$textColor:white;
+
+//Font sizes
+$font-small: 0.75rem;
+$font-reg: 1rem;
+$font-lrg: 1.4rem;
+
+//typography defaults
+$line-height: 1.4;
+
+//margin
+$body-margin: 10px;
+
+//Breakpoints
+$desktopBiggest:1920px;
+$desktopOversized:1400px;
+$desktopLRGE:1020px;
+$desktop:800px;
+$tabletSmall:500px;

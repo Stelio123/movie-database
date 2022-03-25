@@ -1,0 +1,125 @@
+// Footer
+@use "./variables"as *;
+@use "./mixins"as *;
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: $orange;
+    height: 50px;
+    border-top: 2px solid $orange;
+
+
+    p {
+        text-align: center;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    li {
+        text-align: center;
+        list-style-type: none;
+    }
+
+    @media (min-width:$desktop) {
+        display: flex;
+    }
+
+    @media(min-width: $desktopLRGE) {}
+
+}
+
+
+
+.icon-styles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+
+    @media (min-width:$desktopLRGE) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+}
+
+.twitter,
+.instagram,
+.facebook {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 0px 20px;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+        text-decoration: underline;
+        text-decoration-color: $textColor;
+
+    }
+
+    @media(min-width:$desktop) {
+        margin: 0px 20px 0px 20px;
+    }
+
+    @media(min-width:$desktopLRGE) {
+        padding: 0px 0px 0px 35px;
+    }
+}
+
+
+.footer-nav {
+    display: none;
+
+
+    @media(min-width:$desktop) {
+        display: flex;
+        justify-self: flex-end;
+    }
+
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+
+    @media (min-width:$desktop) {
+        padding-right: 5px
+    }
+
+    @media (min-width:$desktopLRGE) {
+        margin: 0px 10px 0px 10rem;
+    }
+
+    @media (min-width:$desktopOversized) {
+        margin: 0px 10px 0px 35rem;
+    }
+
+    @media(min-width: $desktopBiggest) {
+        margin: 0px 10px 0px 60rem;
+    }
+
+}
+
+.foot-link {
+    text-decoration: none;
+    line-height: 50px;
+    font-size: $font-reg;
+    font-weight: bold;
+    padding: 0px 20px 50px 28px;
+
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+        text-decoration-color: $textColor;
+    }
+}

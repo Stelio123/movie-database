@@ -1,0 +1,11 @@
+//Wrapper
+@use "./variables"as *;
+@use "./mixins"as *;
+
+.wrapper {
+    max-width: em(1000);
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: $bgColor;
+
+}

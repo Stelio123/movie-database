@@ -1,0 +1,21 @@
+// Utilities
+@use './variables';
+@use './mixins';
+
+// Resets
+@use './reset';
+@use './typography';
+
+// Components
+@use './body';
+@use './wrapper';
+@use './header';
+@use './nav';
+@use './main';
+@use './movies';
+@use './section';
+@use './footer';
+
+
+//Imports
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
